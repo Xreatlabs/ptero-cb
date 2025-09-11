@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # 🚀 XreatLabs Pterodactyl Panel Installer (Fixed)
 # Author: Ahmadisog
-# This version fixes SQL syntax / deadlock / outfile problems and auto-creates admin.
 
 set -euo pipefail
 
