@@ -51,14 +51,14 @@ services:
     image: ghcr.io/pterodactyl/panel:latest
     restart: unless-stopped
     ports:
-      - "8080:80"
+      - "3001:80"   # Updated to 3001
     depends_on:
       database:
         condition: service_healthy
       cache:
         condition: service_started
     environment:
-      APP_URL: "http://localhost:8080"
+      APP_URL: "http://localhost:3001"   # Updated to 3001
       APP_TIMEZONE: "UTC"
       APP_SERVICE_AUTHOR: "support@xreatlabs.com"
       TRUSTED_PROXIES: "*"
@@ -144,7 +144,7 @@ cat <<EOM
 
 🎉 XreatLabs Panel installed successfully!
 
-Panel URL: http://localhost:8080
+Panel URL: http://localhost:3001
 
 Login:
   Email:    ${ADMIN_EMAIL}
