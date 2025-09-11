@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 🚀 XreatLabs Pterodactyl Panel Installer (Fixed)
+# 🚀 XreatLabs Pterodactyl Panel Installer
 # Author: Ahmadisog
 
 set -euo pipefail
